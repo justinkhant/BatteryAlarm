@@ -1,4 +1,4 @@
-This is only for mac.
+This is only for macos.
 ======
 
 About
