@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+import psutil
+import subprocess
+import time
+
+def ring():
+  for _ in range(1,8):
+      subprocess.run(['afplay','/System/Library/Sounds/Glass.aiff'])
+      time.sleep(0.05)
+
+battery = psutil.sensors_battery()
+while battery.power_plugged:
+  if battery.percent>=98:
+    print('high')
+    ring()
+    break
+  else:
+    print('no matter')
+    time.sleep(10)
+  battery = psutil.sensors_battery()
+while not battery.power_plugged:
+  if battery.percent<=20:
+    print('low')
+    ring()
+    break
+  else:
+    print('no matter')
+    time.sleep(10)
+  battery = psutil.sensors_battery()
+  
+
+
