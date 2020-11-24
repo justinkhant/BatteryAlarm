@@ -1,6 +1,7 @@
 #This is only for mac. It will automatically run when you login your system.
 ======
 ##Requirement
+
 python3 in /usr/bin/env
 ======
 ##start up
@@ -12,7 +13,7 @@ python3 in /usr/bin/env
 ##next
  * Tap the apple icon on the left upper conner.
  * Go to system preference
- * >> Users & Groups>>Login Items
+ * >Users & Groups>Login Items
  * Tap the '+' sign and add the power file
 ======
 ##Use
